@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled, { createGlobalStyle } from "styled-components";
+import dayImage from './assets/dge.png';
+import nightImage from './assets/game.png';
 
 const GlobalStyle = createGlobalStyle`
   body, html {
@@ -434,8 +436,8 @@ const App = () => {
   const [dateInfo, setDateInfo] = useState({});
   const [time, setTime] = useState(new Date());
 
-  const dayBackground = "/dge.png";
-  const nightBackground = "/game.png";
+  const dayBackground = dayImage;
+  const nightBackground = nightImage;
 
   useEffect(() => {
     const updateTime = setInterval(() => {
