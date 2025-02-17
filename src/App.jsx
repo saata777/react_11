@@ -434,8 +434,8 @@ const App = () => {
   const [dateInfo, setDateInfo] = useState({});
   const [time, setTime] = useState(new Date());
 
-  const dayBackground = "dge.png";
-  const nightBackground = "game.png";
+  const dayBackground = "/dge.png";
+  const nightBackground = "/game.png";
 
   useEffect(() => {
     const updateTime = setInterval(() => {
